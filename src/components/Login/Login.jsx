@@ -10,8 +10,8 @@ export const Login = () => {
 
   const { register, handleSubmit, setError, formState: { errors, isValid } } = useForm({
     defaultValues: {
-      email: 'iordakesky76@gmail.com',
-      password: 'bebedede',
+      email: '',
+      password: '',
     },
   });
 
