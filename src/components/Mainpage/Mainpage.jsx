@@ -2,6 +2,7 @@ import style from './Mainpage.module.css'
 import { Settings, Users, User, Home, Gamepad2, Coins, SquareGanttChart } from 'lucide-react';
 import { useDispatch, useSelector } from 'react-redux';
 import { logout, selectIsAuth } from '../../redux/slices/auth';
+import { Link } from 'react-router-dom';
 
 export function Mainpage() {
     const isAuth = useSelector(selectIsAuth)
@@ -10,6 +11,7 @@ export function Mainpage() {
     const onClickLogout = () =>{
         if (window.confirm('Are you sure you wont to logout')){
             dispatch(logout())
+            window.localStorage.removeItem('token')
         }
     };
 
@@ -39,7 +41,7 @@ export function Mainpage() {
                     <label style={{
                         color: 'white'
                     }}>You not logined</label>
-                    <button  className={style.mainbutt}><Settings />Log in</button>
+                    <Link to="/login" className={style.mainbutt}><Settings />Log in</Link>
                     </>
                 )}
            </div>
