@@ -1,0 +1,43 @@
+.boxa {
+    height: 50px;
+    width: 100%;
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 20px; /* Отступ от верхнего края */
+    box-sizing: border-box;
+    overflow: hidden; /* Скрывает любые переполнения */
+}
+
+.polo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center; /* Центрирование по вертикали */
+}
+
+.text {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 400;
+    text-align: left; /* Текст выравнивается по левому краю */
+}
+
+.buttonContainer {
+    display: flex;
+    gap: 10px; /* Промежуток между кнопками */
+}
+
+.butt{
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+    border: solid;
+    background-color: #7f7e7e;
+}
+
+.butt:hover{
+    background-color: #606060;
+}

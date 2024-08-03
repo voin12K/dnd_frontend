@@ -32,3 +32,155 @@
     padding: 20px;
     gap: 20px;
 }
+
+
+
+.modalBackdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont {
+    height: 700px;
+    width: 1200px;
+    background-color: #373737;
+    border-radius: 30px;
+}
+
+.mest{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+.butt{
+    width: 250px;
+    height: 50px;
+    background-color: #B7B7AF;
+    border: 2px solid #373737;
+    border-radius: 10px;
+}
+
+.wrapper{
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+}
+
+.pop{
+    display: flex;
+    justify-content: left;
+    padding-left: 25px;
+    padding-top: 25px;
+}
+
+
+.butt2{
+    background: none;
+    border: none;
+}
+
+.namecom{
+    width: 273px;
+    background: none;
+    height: 25px;
+    border: none;
+    border-bottom: 2px solid #B7B7AF;
+    color: #B7B7AF;
+}
+
+.namecom:focus, 
+.namecom:active {
+  outline: none;
+  box-shadow: none;
+}
+
+.centor{
+    display: flex;
+    justify-content: space-between;
+}
+
+.realbutt{
+    width: 273px;
+    height: 50px;
+    background-color: #B7B7AF;
+    border: 2px solid #373737;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.hop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 10px;
+}
+
+.hop div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hop span, .hop button {
+    line-height: 50px;
+}
+
+.fixedWidthLevel {
+    min-width: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fixedWidthLanguage {
+    min-width: 155px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fixedWidthLevel input, .fixedWidthLanguage input {
+    text-align: center;
+    height: 20px;
+    width: 40px;
+}
+
+.fixedWidthLevel span, .fixedWidthLanguage span {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.closeBtn {
+    margin-top: 10px;
+}
+
+.nevi{
+    border: none;
+    border-bottom: 2px solid #000000;
+    background: none;
+}
+
+.nevi:focus, 
+.nevi:active {
+  outline: none;
+  box-shadow: none;
+}
